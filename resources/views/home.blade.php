@@ -1,6 +1,6 @@
 <x-layout>
     <section class="flex justify-center items-center py-24 relative min-h-screen">
-        <video src="{{ asset('storage/images/background_image_code.mp4') }}" autoplay loop muted
+        <video src="{{ asset('/images/background_image_code.mp4') }}" autoplay loop muted
             class="object-cover blur-sm grayscale h-full absolute left-0 top-0"></video>
         <div class="container flex items-center py-5 flex-col-reverse xl:flex-row gap-20 z-50">
             <div class="basis-full xl:basis-1/2 space-y-7">
@@ -16,14 +16,14 @@
                     <a href="#"
                         class="w-3/4 xl:w-1/4 py-3 font-medium px-5 border border-white rounded-lg text-center text-white hover:bg-gray-100 hover:text-gray-900 transition duration-150 ease-in-out transform hover:scale-110">Learn
                         More</a>
-                    <a href="#"
+                    <a href="{{ route('contact') }}"
                         class="w-3/4 xl:w-1/4 py-3 font-medium px-5 bg-primary text-center text-white rounded-lg transition duration-150 ease-in-out transform hover:scale-110">Contact
                         Me</a>
                 </div>
             </div>
             <div class="basis-full xl:basis-1/2 flex  justify-center">
                 <div
-                    class="justify-center size-96 xl:w-[500px] xl:h-[500px] 2xl:w-[600px] 2xl:h-[600px] rounded-full bg-center bg-cover bg-no-repeat bg-[url('/public/storage/images/wency.jpeg')]">
+                    class="justify-center size-96 xl:w-[500px] xl:h-[500px] 2xl:w-[600px] 2xl:h-[600px] rounded-full bg-center bg-cover bg-no-repeat bg-[url('/public/images/wency.jpeg')]">
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-10 lg:gap-8">
                         <div class="p-5 rounded-xl bg-gray-100 space-y-2  hover:bg-gray-300">
                             <div class="flex justify-center items-center gap-4">
-                                <img class="size-9" src="{{ asset('storage/images/default.png') }}" alt="">
+                                <img class="size-9" src="{{ asset('images/default.png') }}" alt="">
                                 <h3 class="text-base">HTML</h3>
                             </div>
                             <div class="flex justify-center items-center gap-3">
@@ -77,7 +77,7 @@
                         </div>
                         <div class="p-5 rounded-xl bg-gray-100 space-y-2  hover:bg-gray-300">
                             <div class="flex justify-center items-center gap-4">
-                                <img class="size-9" src="{{ asset('storage/images/default.png') }}" alt="">
+                                <img class="size-9" src="{{ asset('/images/default.png') }}" alt="">
                                 <h3 class="text-base">CSS</h3>
                             </div>
                             <div class="flex justify-center items-center gap-3">
@@ -89,7 +89,7 @@
                         </div>
                         <div class="p-5 rounded-xl bg-gray-100 space-y-2  hover:bg-gray-300">
                             <div class="flex justify-center items-center gap-4">
-                                <img class="size-9" src="{{ asset('storage/images/default.png') }}" alt="">
+                                <img class="size-9" src="{{ asset('/images/default.png') }}" alt="">
                                 <h3 class="text-base">JavaScript</h3>
                             </div>
                             <div class="flex justify-center items-center gap-3">
@@ -101,7 +101,7 @@
                         </div>
                         <div class="p-5 rounded-xl bg-gray-100 space-y-2  hover:bg-gray-300">
                             <div class="flex justify-center items-center gap-4">
-                                <img class="size-9" src="{{ asset('storage/images/default.png') }}" alt="">
+                                <img class="size-9" src="{{ asset('/images/default.png') }}" alt="">
                                 <h3 class="text-base">PHP</h3>
                             </div>
                             <div class="flex justify-center items-center gap-3">
@@ -113,7 +113,7 @@
                         </div>
                         <div class="p-5 rounded-xl bg-gray-100 space-y-2  hover:bg-gray-300">
                             <div class="flex justify-center items-center gap-4">
-                                <img class="size-9" src="{{ asset('storage/images/default.png') }}" alt="">
+                                <img class="size-9" src="{{ asset('/images/default.png') }}" alt="">
                                 <h3 class="text-base">Laravel 11</h3>
                             </div>
                             <div class="flex justify-center items-center gap-3">
@@ -125,7 +125,7 @@
                         </div>
                         <div class="p-5 rounded-xl bg-gray-100 space-y-2  hover:bg-gray-300">
                             <div class="flex justify-center items-center gap-4">
-                                <img class="size-9" src="{{ asset('storage/images/default.png') }}" alt="">
+                                <img class="size-9" src="{{ asset('/images/default.png') }}" alt="">
                                 <h3 class="text-base">VUE 3</h3>
                             </div>
                             <div class="flex justify-center items-center gap-3">
@@ -137,7 +137,7 @@
                         </div>
                         <div class="p-5 rounded-xl bg-gray-100 space-y-2  hover:bg-gray-300">
                             <div class="flex justify-center items-center gap-4">
-                                <img class="size-9" src="{{ asset('storage/images/default.png') }}" alt="">
+                                <img class="size-9" src="{{ asset('/images/default.png') }}" alt="">
                                 <h3 class="text-base">MySQL</h3>
                             </div>
                             <div class="flex justify-center items-center gap-3">
@@ -161,7 +161,7 @@
                         <div class="p-5 rounded-xl bg-gray-100 space-y-2  hover:bg-gray-300">
                             <div class="flex justify-center items-center gap-4">
                                 <h3 class="text-base">WordPress</h3>
-                                <img class="size-9" src="{{ asset('storage/images/default.png') }}" alt="">
+                                <img class="size-9" src="{{ asset('/images/default.png') }}" alt="">
                             </div>
                             <div class="flex justify-center items-center gap-3">
                                 <div class="bg-gray-400 h-2.5 w-full rounded">
@@ -173,7 +173,7 @@
                         <div class="p-5 rounded-xl bg-gray-100 space-y-2  hover:bg-gray-300">
                             <div class="flex justify-center items-center gap-4">
                                 <h3 class="text-base">Bootstrap</h3>
-                                <img class="size-9" src="{{ asset('storage/images/default.png') }}" alt="">
+                                <img class="size-9" src="{{ asset('/images/default.png') }}" alt="">
                             </div>
                             <div class="flex justify-center items-center gap-3">
                                 <div class="bg-gray-400 h-2.5 w-full rounded">
@@ -185,7 +185,7 @@
                         <div class="p-5 rounded-xl bg-gray-100 space-y-2  hover:bg-gray-300">
                             <div class="flex justify-center items-center gap-4">
                                 <h3 class="text-base">Tailwind</h3>
-                                <img class="size-9" src="{{ asset('storage/images/default.png') }}" alt="">
+                                <img class="size-9" src="{{ asset('/images/default.png') }}" alt="">
                             </div>
                             <div class="flex justify-center items-center gap-3">
                                 <div class="bg-gray-400 h-2.5 w-full rounded">
@@ -197,7 +197,7 @@
                         <div class="p-5 rounded-xl bg-gray-100 space-y-2  hover:bg-gray-300">
                             <div class="flex justify-center items-center gap-4">
                                 <h3 class="text-base">Flowbite</h3>
-                                <img class="size-9" src="{{ asset('storage/images/default.png') }}" alt="">
+                                <img class="size-9" src="{{ asset('/images/default.png') }}" alt="">
                             </div>
                             <div class="flex justify-center items-center gap-3">
                                 <div class="bg-gray-400 h-2.5 w-full rounded">
@@ -209,7 +209,7 @@
                         <div class="p-5 rounded-xl bg-gray-100 space-y-2  hover:bg-gray-300">
                             <div class="flex justify-center items-center gap-4">
                                 <h3 class="text-base">DaisyUI</h3>
-                                <img class="size-9" src="{{ asset('storage/images/default.png') }}" alt="">
+                                <img class="size-9" src="{{ asset('/images/default.png') }}" alt="">
                             </div>
                             <div class="flex justify-center items-center gap-3">
                                 <div class="bg-gray-400 h-2.5 w-full rounded">
@@ -221,7 +221,7 @@
                         <div class="p-5 rounded-xl bg-gray-100 space-y-2  hover:bg-gray-300">
                             <div class="flex justify-center items-center gap-4">
                                 <h3 class="text-base">Inertia JS</h3>
-                                <img class="size-9" src="{{ asset('storage/images/default.png') }}" alt="">
+                                <img class="size-9" src="{{ asset('/images/default.png') }}" alt="">
                             </div>
                             <div class="flex justify-center items-center gap-3">
                                 <div class="bg-gray-400 h-2.5 w-full rounded">
@@ -233,7 +233,7 @@
                         <div class="p-5 rounded-xl bg-gray-100 space-y-2  hover:bg-gray-300">
                             <div class="flex justify-center items-center gap-4">
                                 <h3 class="text-base">GitHub</h3>
-                                <img class="size-9" src="{{ asset('storage/images/default.png') }}" alt="">
+                                <img class="size-9" src="{{ asset('/images/default.png') }}" alt="">
                             </div>
                             <div class="flex justify-center items-center gap-3">
                                 <div class="bg-gray-400 h-2.5 w-full rounded">
@@ -263,11 +263,11 @@
     </section>
 
     <section class="py-24 bg-blue-100 relative">
-        <img src="{{ asset('storage/images/background_image_2.png') }}" alt=""
+        <img src="{{ asset('/images/background_image_2.png') }}" alt=""
             class="object-cover h-full absolute left-0 top-0 opacity-50">
         <div class="container flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-28">
             <div class="z-50">
-                <img src="{{ asset('storage/images/wency.jpeg') }}" alt=""
+                <img src="{{ asset('/images/wency.jpeg') }}" alt=""
                     class="size-96 mx-auto border-4 border-gray-300 shadow-2xl">
                 {{-- <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit numquam id nisi optio quos, dolorem assumenda excepturi nesciunt sequi repellat reiciendis aliquam dolores eum inventore ullam atque amet facere vitae!
@@ -303,7 +303,7 @@
                     </div>
 
                     <div class="flex justify-end items-center mt-10">
-                        <a href="#"
+                        <a href="{{ route('about') }}"
                             class="text-2xl font-medium text-center transition duration-150 ease-in-out transform hover:scale-110">
                             More About Me
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -324,7 +324,7 @@
             <div
                 class="rounded-2xl border lg:hover:border-gray-200 lg:hover:shadow-2xl lg:hover:scale-105 duration-150">
                 <div class="h-52 bg-contain bg-no-repeat bg-gray-200 rounded-t-2xl"
-                    style="background-image: url('{{ asset('storage/images/default.png') }}')">
+                    style="background-image: url('{{ asset('/images/default.png') }}')">
                 </div>
                 <div class="p-5 space-y-3">
                     <h3 class="text-2xl font-bold">Title</h3>
@@ -373,7 +373,7 @@
                 <div
                     class="max-lg:w-96 rounded-2xl border lg:hover:border-gray-200 lg:hover:shadow-2xl lg:hover:scale-105 duration-150">
                     <div class="h-52 bg-contain bg-no-repeat bg-gray-200 rounded-t-2xl"
-                        style="background-image: url('{{ asset('storage/images/default.png') }}')">
+                        style="background-image: url('{{ asset('/images/default.png') }}')">
                     </div>
                     <div class="p-5 space-y-3">
                         <h3 class="text-2xl font-bold">Title</h3>
@@ -417,7 +417,7 @@
                 <div
                     class="max-lg:w-96 rounded-2xl border lg:hover:border-gray-200 lg:hover:shadow-2xl lg:hover:scale-105 duration-150">
                     <div class="h-52 bg-contain bg-no-repeat bg-gray-200 rounded-t-2xl"
-                        style="background-image: url('{{ asset('storage/images/default.png') }}')">
+                        style="background-image: url('{{ asset('/images/default.png') }}')">
                     </div>
                     <div class="p-5 space-y-3">
                         <h3 class="text-2xl font-bold">Title</h3>
@@ -461,7 +461,7 @@
                 <div
                     class="max-lg:w-96 rounded-2xl border lg:hover:border-gray-200 lg:hover:shadow-2xl lg:hover:scale-105 duration-150">
                     <div class="h-52 bg-contain bg-no-repeat bg-gray-200 rounded-t-2xl"
-                        style="background-image: url('{{ asset('storage/images/default.png') }}')">
+                        style="background-image: url('{{ asset('/images/default.png') }}')">
                     </div>
                     <div class="p-5 space-y-3">
                         <h3 class="text-2xl font-bold">Title</h3>
@@ -523,7 +523,7 @@
                 <div
                     class="max-lg:min-w-96 lg:min-w-60 rounded-2xl border lg:hover:border-gray-200 lg:hover:shadow-2xl lg:hover:scale-105 duration-150">
                     <div class="h-52 bg-contain bg-no-repeat bg-gray-200 rounded-t-2xl"
-                        style="background-image: url('{{ asset('storage/images/default.png') }}')">
+                        style="background-image: url('{{ asset('/images/default.png') }}')">
                     </div>
                     <div class="p-5 space-y-3">
                         <h3 class="text-2xl font-bold">Title</h3>
@@ -567,7 +567,7 @@
                 <div
                     class="max-lg:min-w-96 lg:grow rounded-2xl border lg:hover:border-gray-200 lg:hover:shadow-2xl lg:hover:scale-105 duration-150">
                     <div class="h-52 bg-contain bg-no-repeat bg-gray-200 rounded-t-2xl"
-                        style="background-image: url('{{ asset('storage/images/default.png') }}')">
+                        style="background-image: url('{{ asset('/images/default.png') }}')">
                     </div>
                     <div class="p-5 space-y-3">
                         <h3 class="text-2xl font-bold">Title</h3>
@@ -611,7 +611,7 @@
                 <div
                     class="max-lg:min-w-96 lg:min-w-60 rounded-2xl border lg:hover:border-gray-200 lg:hover:shadow-2xl lg:hover:scale-105 duration-150">
                     <div class="h-52 bg-contain bg-no-repeat bg-gray-200 rounded-t-2xl"
-                        style="background-image: url('{{ asset('storage/images/default.png') }}')">
+                        style="background-image: url('{{ asset('/images/default.png') }}')">
                     </div>
                     <div class="p-5 space-y-3">
                         <h3 class="text-2xl font-bold">Title</h3>
@@ -652,7 +652,7 @@
                         </div>
                     </div>
                 </div>
-                <a href=""
+                <a href="{{ route('portfolio') }}"
                     class="lg:hidden xl:block my-auto xl:text-xl 2xl:text-2xl font-medium transition duration-150 ease-in-out transform lg:hover:scale-110">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="xl:size-14 2xl:size-20 mx-auto">
@@ -679,7 +679,7 @@
     </section>
 
     {{-- <section
-        class="py-24 bg-blend-hard-light bg-center bg-cover bg-no-repeat bg-[url('/public/storage/images/background_image_plane.png')]">
+        class="py-24 bg-blend-hard-light bg-center bg-cover bg-no-repeat bg-[url('/public/images/background_image_plane.png')]">
         <div class="container flex justify-center items-center">
             <div class="flex flex-col xl:flex-row lg:gap-20">
 
@@ -817,18 +817,18 @@
         </div>
     </section> --}}
 
-    <section class="flex py-24 bg-blue-200 relative h-[500px]">
-        {{-- <img src="{{ asset('storage/images/background_image_paper.png') }}" alt="" class="w-full object-cover brightness-95 h-full absolute left-0 top-0"> --}}
-        <video src="{{ asset('storage/images/background_image_plane3.mp4') }}" autoplay loop muted
+    <section class="flex py-40 bg-blue-200 relative">
+
+        <video src="{{ asset('/images/background_image_plane3.mp4') }}" autoplay loop muted
             class="object-cover object-top w-full h-full absolute left-0 top-0"></video>
         <div class="container flex justify-center align-middle xl:px-52 2xl:px-72 z-50">
             <div class="text-center space-y-6">
-                <h1 class="text-5xl">Let’s Create Something Amazing Together</h1>
-                <p class="">
-                    Whether you’re starting from scratch or need help refining your ideas, I’m here to collaborate and deliver solutions that truly stand out. Let’s turn your vision into reality—reach out today!
+                <h1 class="text-6xl font-semibold">Let’s Create Something Amazing Together</h1>
+                <p class="text-lg font-normal">
+                    Whether you’re starting from scratch or need help refining your ideas, I’m here to collaborate and deliver solutions that truly stand out. Let’s turn your vision into reality. Reach out today!
                 </p>
                 <div class="flex justify-center">
-                    <a href="#"
+                    <a href="{{ route('contact') }}"
                         class="py-3 font-medium px-5 bg-primary text-center text-white rounded-lg transition duration-150 ease-in-out transform hover:scale-110">
                         Contact Me
                     </a>

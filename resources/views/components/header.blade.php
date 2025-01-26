@@ -1,5 +1,5 @@
 <header>
-    <nav class="bg-bg">
+    <nav class="bg-white">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="{{ route('home') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
                 {{-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> --}}
@@ -32,7 +32,7 @@
                         </a>
                     </li> --}}
                     <li class="group inline-block relative max-md:hover:bg-hover">
-                        <a href="#"
+                        <a href="{{ route('home') }}"
                             class="py-2 px-3 md:p-3 max-md:w-full inline-block text-lg font-semibold text-gray-800 max-md:group-hover:text-white md:group-hover:text-primary">
                             Home
                             <span
@@ -41,7 +41,7 @@
                         </a>
                     </li>
                     <li class="group inline-block relative max-md:hover:bg-hover">
-                        <a href="#"
+                        <a href="{{ route('about') }}"
                             class="py-2 px-3 md:p-3 max-md:w-full inline-block text-lg font-semibold text-gray-800 max-md:group-hover:text-white md:group-hover:text-primary">
                             About
                             <span
@@ -50,7 +50,7 @@
                         </a>
                     </li>
                     <li class="group inline-block relative max-md:hover:bg-hover">
-                        <a href="#"
+                        <a href="{{ route('skills.index') }}"
                             class="py-2 px-3 md:p-3 max-md:w-full inline-block text-lg font-semibold text-gray-800 max-md:group-hover:text-white md:group-hover:text-primary">
                             Skills
                             <span
@@ -59,7 +59,7 @@
                         </a>
                     </li>
                     <li class="group inline-block relative max-md:hover:bg-hover">
-                        <a href="#"
+                        <a href="{{ route('portfolio') }}"
                             class="py-2 px-3 md:p-3 max-md:w-full inline-block text-lg font-semibold text-gray-800 max-md:group-hover:text-white md:group-hover:text-primary">
                             Portfolio
                             <span

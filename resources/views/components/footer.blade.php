@@ -3,7 +3,7 @@
         <div class="py-10 flex flex-col xl:flex-row text-white max-xl:gap-8">
             <div class="grow">
                 <div class="w-full lg:w-1/2">
-                    <a href="#"><img src="{{ asset('storage/images/jake_logo_white.svg') }}" alt=""
+                    <a href="#"><img src="{{ asset('/images/jake_logo_white.svg') }}" alt=""
                             class="w-11/12 lg:w-full transition duration-150 ease-in-out transform hover:scale-105"></a>
                     <p class="text-lg">An aspiring web developer specializing in crafting <span
                             class="inline-block">user-friendly</span> and dynamic web solutions.</p>
@@ -14,7 +14,7 @@
 
                 <div class="w-20 flex flex-col space-y-2">
                     <h1 class="text-2xl text-gray-400">Menu</h1>
-                    <a href="#"
+                    <a href="{{ route('home') }}"
                         class="text-lg border-b border-gray-400 transition duration-150 ease-in-out transform hover:scale-105 hover:text-primary inline-flex items-center space-x-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-3 inline">
@@ -22,7 +22,7 @@
                         </svg>
                         Home
                     </a>
-                    <a href="#"
+                    <a href="{{ route('about') }}"
                         class="text-lg border-b border-gray-400 transition duration-150 ease-in-out transform hover:scale-105 hover:text-primary inline-flex items-center space-x-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-3 inline">
@@ -30,7 +30,7 @@
                         </svg>
                         About
                     </a>
-                    <a href="#"
+                    <a href="{{ route('skills.index') }}"
                         class="text-lg border-b border-gray-400 transition duration-150 ease-in-out transform hover:scale-105 hover:text-primary inline-flex items-center space-x-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-3 inline">
@@ -38,36 +38,51 @@
                         </svg>
                         Skills
                     </a>
-                    <a href="#"
+                    <a href="{{ route('portfolio') }}"
                         class="text-lg border-b border-gray-400 transition duration-150 ease-in-out transform hover:scale-105 hover:text-primary inline-flex items-center space-x-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-3 inline">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                         </svg>
-                        Contact
+                        Portfolio
                     </a>
                 </div>
 
 
                 <div class="flex flex-col space-y-2">
-                    <h1 class="text-2xl text-gray-400">Socials</h1>
+                    <h1 class="text-2xl text-gray-400">Message</h1>
 
-
-                    <a href="#"
+                    <a href="https://www.m.me/jakedave.deguzman.7" target="_blank"
                         class="text-lg transition duration-150 ease-in-out transform hover:scale-105 hover:text-primary inline-flex items-center space-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="size-10 inline">
-                            <path fill="#3F51B5"
-                                d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z">
-                            </path>
-                            <path fill="#FFF"
-                                d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z">
-                            </path>
-                        </svg>
-                        <span class="inline align-middle">Facebook</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                        viewBox="0 0 48 48" class="size-10 inline">
+                        <radialGradient id="8O3wK6b5ASW2Wn6hRCB5xa_YFbzdUk7Q3F8_gr1" cx="11.087" cy="7.022"
+                            r="47.612" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#1292ff"></stop>
+                            <stop offset=".079" stop-color="#2982ff"></stop>
+                            <stop offset=".23" stop-color="#4e69ff"></stop>
+                            <stop offset=".351" stop-color="#6559ff"></stop>
+                            <stop offset=".428" stop-color="#6d53ff"></stop>
+                            <stop offset=".754" stop-color="#df47aa"></stop>
+                            <stop offset=".946" stop-color="#ff6257"></stop>
+                        </radialGradient>
+                        <path fill="url(#8O3wK6b5ASW2Wn6hRCB5xa_YFbzdUk7Q3F8_gr1)"
+                            d="M44,23.5C44,34.27,35.05,43,24,43c-1.651,0-3.25-0.194-4.784-0.564	c-0.465-0.112-0.951-0.069-1.379,0.145L13.46,44.77C12.33,45.335,11,44.513,11,43.249v-4.025c0-0.575-0.257-1.111-0.681-1.499	C6.425,34.165,4,29.11,4,23.5C4,12.73,12.95,4,24,4S44,12.73,44,23.5z">
+                        </path>
+                        <path
+                            d="M34.992,17.292c-0.428,0-0.843,0.142-1.2,0.411l-5.694,4.215	c-0.133,0.1-0.28,0.15-0.435,0.15c-0.15,0-0.291-0.047-0.41-0.136l-3.972-2.99c-0.808-0.601-1.76-0.918-2.757-0.918	c-1.576,0-3.025,0.791-3.876,2.116l-1.211,1.891l-4.12,6.695c-0.392,0.614-0.422,1.372-0.071,2.014	c0.358,0.654,1.034,1.06,1.764,1.06c0.428,0,0.843-0.142,1.2-0.411l5.694-4.215c0.133-0.1,0.28-0.15,0.435-0.15	c0.15,0,0.291,0.047,0.41,0.136l3.972,2.99c0.809,0.602,1.76,0.918,2.757,0.918c1.576,0,3.025-0.791,3.876-2.116l1.211-1.891	l4.12-6.695c0.392-0.614,0.422-1.372,0.071-2.014C36.398,17.698,35.722,17.292,34.992,17.292L34.992,17.292z"
+                            opacity=".05"></path>
+                        <path
+                            d="M34.992,17.792c-0.319,0-0.63,0.107-0.899,0.31l-5.697,4.218	c-0.216,0.163-0.468,0.248-0.732,0.248c-0.259,0-0.504-0.082-0.71-0.236l-3.973-2.991c-0.719-0.535-1.568-0.817-2.457-0.817	c-1.405,0-2.696,0.705-3.455,1.887l-1.21,1.891l-4.115,6.688c-0.297,0.465-0.32,1.033-0.058,1.511c0.266,0.486,0.787,0.8,1.325,0.8	c0.319,0,0.63-0.107,0.899-0.31l5.697-4.218c0.216-0.163,0.468-0.248,0.732-0.248c0.259,0,0.504,0.082,0.71,0.236l3.973,2.991	c0.719,0.535,1.568,0.817,2.457,0.817c1.405,0,2.696-0.705,3.455-1.887l1.21-1.891l4.115-6.688c0.297-0.465,0.32-1.033,0.058-1.511	C36.051,18.106,35.531,17.792,34.992,17.792L34.992,17.792z"
+                            opacity=".07"></path>
+                        <path fill="#fff"
+                            d="M34.394,18.501l-5.7,4.22c-0.61,0.46-1.44,0.46-2.04,0.01L22.68,19.74	c-1.68-1.25-4.06-0.82-5.19,0.94l-1.21,1.89l-4.11,6.68c-0.6,0.94,0.55,2.01,1.44,1.34l5.7-4.22c0.61-0.46,1.44-0.46,2.04-0.01	l3.974,2.991c1.68,1.25,4.06,0.82,5.19-0.94l1.21-1.89l4.11-6.68C36.434,18.901,35.284,17.831,34.394,18.501z">
+                        </path>
+                    </svg>
+                        <span class="inline align-middle">Messenger</span>
                     </a>
 
-
-                    <a href="#"
+                    <a href="https://api.whatsapp.com/send?phone=639510505308" target="_blank"
                         class="text-lg transition duration-150 ease-in-out transform hover:scale-105 hover:text-primary inline-flex items-center space-x-2">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="size-10 inline">
                             <path fill="#fff"
@@ -89,8 +104,7 @@
                         <span class="inline align-middle">WhatsApp</span>
                     </a>
 
-
-                    <a href="#"
+                    <a href="https://join.skype.com/invite/uLpxKBOeGhAt" target="_blank"
                         class="text-lg transition duration-150 ease-in-out transform hover:scale-105 hover:text-primary inline-flex items-center space-x-2">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="size-10 inline">
                             <path fill="#03a9f4" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path>
@@ -104,8 +118,7 @@
                         <span class="inline align-middle">Skype</span>
                     </a>
 
-
-                    <a href="#"
+                    <a href="https://www.linkedin.com/in/jake-dave-de-guzman-6178a92bb/" target="_blank"
                         class="text-lg transition duration-150 ease-in-out transform hover:scale-105 hover:text-primary inline-flex items-center space-x-2">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="size-10 inline">
                             <path fill="#0288D1"
@@ -118,7 +131,6 @@
                         <span class="inline align-middle">Linkedin</span>
                     </a>
                 </div>
-
 
                 <div class="flex flex-col space-y-2">
                     <h1 class="text-2xl text-gray-400">Contact</h1>
@@ -137,7 +149,7 @@
                                 d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
                         </svg>
                         <span class="text-lg select-all font-medium">
-                            +639510505308
+                            09510505308
                         </span>
                     </div>
                 </div>
