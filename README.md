@@ -3,5 +3,4 @@
 ### Note
 
 <p>After you clone this repository, you need the run the following commands:</p>
-`composer install`
-<code>ins</code>
+<code>composer install</code>
