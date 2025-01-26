@@ -3,7 +3,7 @@
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="{{ route('home') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
                 {{-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> --}}
-                <img src="{{ asset('/storage/images/jake_logo_black.svg') }}" class="h-14" alt="Jake Dave Logo" />
+                <img src="{{ asset('/images/jake_logo_black.svg') }}" class="h-14" alt="Jake Dave Logo" />
                 {{-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> --}}
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
