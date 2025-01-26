@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --color-primary: #007BFF;
+        --color-secondary: #6C757D;
+        --color-accent: #28A745;
+        --color-bg: #F8F9FA;
+        --color-text: #212529;
+        --color-link: #007BFF;
+        --color-button: #007BFF;
+        --color-hover: #0056b3;
+    }
+}
+
+/* @layer components {
+    .container {
+        @apply mx-auto bg-primary h-56
+    }
+} */
