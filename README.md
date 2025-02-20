@@ -8,3 +8,5 @@
 <li><code>php artisan key:generate</code></li>
 <li><code>php artisan migrate</code></li>
 </ul>
+
+#PS: My portfolio is not yet finished and is in the development process...
